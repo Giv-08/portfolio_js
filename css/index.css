@@ -1,0 +1,93 @@
+/*         INDEX MAIN          */
+main#right {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#greeting_box {
+  position: relative;
+}
+
+div#main {
+  /* height: 100%; */
+  padding: 30px 30px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+#greeting {
+  position: absolute;
+  font-size: 10rem;
+  letter-spacing: 5px;
+}
+
+#greeting:after {
+  animation: abomination1 4s linear infinite;
+  animation-fill-mode: forwards;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  left: 30%;
+  top: 50%;
+}
+
+@keyframes abomination1 {
+  5% {
+    content: "H";
+  }
+  10% {
+    content: "He";
+  }
+  15% {
+    content: "Hel";
+  }
+  20% {
+    content: "Hell";
+  }
+  25% {
+    content: "Hello";
+  }
+  30% {
+    content: "Hello.";
+  }
+  100% {
+    content: "";
+  }
+}
+
+span#name {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+
+span#surname {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#title {
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+#line_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border-left: 3px solid grey;
+}
+
+div#fullname {
+  margin-left: 60px;
+  display: flex;
+  width: 100%;
+  border-bottom: 3px solid grey;
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+}
