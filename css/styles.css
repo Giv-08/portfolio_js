@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+:root {
+  --black: #2e2e2e;
+  --beige: #e8e4d3;
+  --green: #325938;
+  /* --lightgreen: #e1eedd; */
+  --yellow: #f6c453;
+  --lightyellow: #f3e3bf;
+  --orange: #dc7e19;
+  --white: #ffffff;
+  }
+
+body {
+  margin: 0;
+  color: var(--black);
+  background-color: var(--beige);
+  font-family: "Gabarito", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/*          scrollbar          */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
+
+/*          HEADER          */
+/*          navbar          */
+header {
+  height: 100vh;
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+}
+
+#nav_container {
+  display: flex;
+  justify-content: center;
+}
+
+#nav_logo {
+  position: fixed;
+  margin-top: 50px;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 100px;
+  height: 100px;
+}
+
+#nav_logo:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: all 800ms ease-in-out;
+}
+
+div.nav_menu {
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  /* z-index: 1; */
+}
+
+ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.nav_menu_item {
+  list-style: none;
+  color: var(--orange);
+  margin-top: 50px;
+  font-size: 3.5rem;
+}
+
+li.nav_menu_item:hover {
+  cursor: pointer;
+  color: var(--lightyellow);
+  transition: all 400ms ease-in-out;
+  transform: scale(1.2);
+}
+
+#nav_contact {
+  display: flex;
+  justify-content: center;
+}
+
+#email{
+  padding: 5px 15px;
+  background-color: var(--black);
+  position: fixed;
+  color: var(--white);
+  text-decoration: none;
+  bottom: 5%;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+#email:hover {
+  background-color: rgb(118, 91, 32);
+  transition: 500ms ease-in-out;
+}
+/*          MAIN          */
+main#right {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+div#main {
+  /* height: 100%; */
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#greeting {
+  font-size: 10rem;
+}
+
+span#name {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+span#surname {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+span#title {
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+#line_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border-left: 3px solid grey;
+}
+
+div#fullname {
+  margin-left: 60px;
+  display: flex;
+  width: 100%;
+  border-bottom: 3px solid grey;
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+}
