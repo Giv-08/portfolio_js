@@ -1,13 +1,45 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*            ABOUT MAIN          */
 main {
-  margin: 80px 100px;
+  margin: 50px 150px;
 }
 
 h1#about {
   font-size: 6rem;
+  margin: 0px 0 30px;
 }
 
 p {
   font-size: 1rem;
   line-height: 30px;
+  text-align: justify;
+}
+
+#about_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#my_photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* #my_photo:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+} */
+
+strong.bold {
+  font-size: 1.2rem;
+}
+
+#intro p {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+  padding-right: 15px;
 }

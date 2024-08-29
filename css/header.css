@@ -33,7 +33,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--black);
+  background: var(--yellow);
   border-radius: 5px;
 }
 
@@ -45,7 +45,7 @@ body {
 /*          HEADER          */
 /*          navbar          */
 header {
-  height: 100vh;
+  position: sticky;
   background: var(--yellow);
   display: flex;
   justify-content: center;
@@ -61,8 +61,8 @@ header {
   margin-top: 50px;
   text-decoration: none;
   font-size: 2rem;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 #nav_logo:hover {
@@ -75,12 +75,13 @@ div.nav_menu {
   width: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   transition: 1s;
-  /* z-index: 1; */
+  position: fixed;
+  top: 25%;
 }
 
 ul {
+  position: fixed;
   margin-top: 0;
   padding: 0;
   list-style: none;
