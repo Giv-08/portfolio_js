@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 /*         INDEX MAIN          */
 main#right {
   overflow: auto;
@@ -63,11 +66,15 @@ span#name {
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 0.5rem;
+  /* font-family: "Bungee Shade", sans-serif; */
+  font-family: "Rampart One", sans-serif;
 }
 
 span#surname {
   font-size: 4rem;
   font-weight: 600;
+  /* font-family: "Bungee Shade", sans-serif; */
+  font-family: "Rampart One", sans-serif;
 }
 
 #title {

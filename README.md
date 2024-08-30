@@ -1,1 +1,4 @@
-# Minimal_portfolio
+### Overview
+This portfolio project is a responsive website built with HTML, CSS, and JavaScript, designed to demonstrate my core frontend development skills. The site features a clean and intuitive layout, showcasing my work, skills, and experience. It adapts seamlessly to various screen sizes, ensuring an optimal user experience on desktops, tablets, and mobile devices. Through this project, I aimed to highlight my ability to create visually appealing designs, implement responsive layouts, and write clean, maintainable code. The website also incorporates interactive elements to enhance user engagement and provide a dynamic browsing experience.
+### Objective
+The purpose of this project is to showcase my proficiency in frontend development by creating a responsive website. It serves as a demonstration of my ability to design and implement user interfaces using HTML, CSS, and JavaScript. The project also highlights my attention to detail in creating a visually appealing and functional site that adapts seamlessly across different screen sizes and devices.
