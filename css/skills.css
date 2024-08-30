@@ -1,8 +1,29 @@
 /*            SKILL MAIN           */
 main {
-  padding: 30px 30px;
+  /* height: 100vh; */
+  padding: 50px 100px;
 }
 
 h1#skills {
   font-size: 5rem;
+}
+
+#skills_container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+li.skill {
+  line-height: 40px;
+  font-size: 1.2rem;
+}
+
+/* Ensure the hover effect covers all child elements */
+#box_one * {
+  background-color: inherit;
+}
+
+#box_one:hover {
+  background-color: azure;
 }
