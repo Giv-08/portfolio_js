@@ -45,7 +45,6 @@ body {
 /*          HEADER          */
 /*          navbar          */
 header {
-  height: 100vh;
   position: sticky;
   background: var(--yellow);
   display: flex;
