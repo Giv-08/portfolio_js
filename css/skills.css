@@ -11,14 +11,26 @@ h1#skills {
 #skills_container {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-li.skill {
+.skills_box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span.skill {
   line-height: 40px;
   font-size: 1.2rem;
 }
 
+div#box_one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* Ensure the hover effect covers all child elements */
 #box_one * {
   background-color: inherit;
