@@ -32,12 +32,51 @@ div.project_card {
 div.project_card:hover {
   cursor: pointer;
   opacity: 1; /* Fully opaque on hover */
+  transition: 500ms ease-in-out all;
   transform: translateY(-15px);
+}
+
+.project_container{
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .project_photo {
   width: 400px;
   /* opacity: 0.7; */
+}
+
+#project_gif {
+  width: 400px;
+  height: 215px;
+}
+
+.project_button {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.view_button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 500ms ease-in-out all;
+  background-color:var(--yellow);
+  width: 60px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.view_button:hover {
+  background-color: #f5d489;
+  opacity: 0.9;
+}
+div.project_card:hover .view_button {
+  display: block;
 }
 
 span {
