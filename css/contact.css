@@ -9,3 +9,108 @@
   --white: #ffffff;
   }
 /*          MAIN PROJECTS        */
+main {
+  padding: 50px 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h1#contact_social {
+  font-size: 6rem;
+}
+.container {
+  display: flex;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  width: 850px;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon_box {
+  display: flex;
+  font-size: 2.5rem;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.fa-brands {
+  transition: all 330ms ease-in-out;
+}
+
+.fa-brands:hover {
+  transform: scale(1.4);
+  color: var(--yellow);
+}
+
+#contact_form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+input {
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 6px solid #f6c453;
+  outline: none;
+  letter-spacing: 3px;
+}
+
+label {
+  font-size: 2.5rem;
+  margin: 15px 0px;
+}
+
+textarea {
+  background-color: transparent;
+  font-size: 1.2rem;
+  width: 480px;
+  height: 70px;
+  padding: 15px 0px;
+  border: none;
+  border-bottom: 6px solid #f6c453;
+  outline: none;
+  resize: none;
+}
+
+textarea:active ~ label{
+  color: transparent;
+}
+
+.btn_box {
+  display: flex;
+  justify-content: center;
+}
+
+#submit_btn {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 230px;
+  transition: all 330ms ease-in-out;
+}
+
+#submit_btn:hover {
+  transform: scale(1.1);
+  color: var(--yellow);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.contact_message {
+  color: var(--black);
+}
+
+input:-webkit-autofill {
+  /* box-shadow: 0 0 0 30px rgb(244, 232, 187) inset !important; */
+  transition: background-color 5000s ease-in-out 0s;
+}
