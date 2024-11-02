@@ -8,6 +8,7 @@
   --orange: #dc7e19;
   --white: #ffffff;
   }
+
 /*          MAIN PROJECTS        */
 main {
   padding: 50px 65px;
@@ -16,7 +17,72 @@ main {
   align-items: flex-end;
 }
 
+header {
+  height: 100vh;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* #resume_btn {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 230px;
+  height: 25px;
+  transition: all 330ms ease-in-out;
+  border-bottom: none;
+  box-shadow: 1.5px 8px #dc7e19;
+  -webkit-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+} */
+
+.text-ring {
+  position: relative;
+  margin-left: 5rem;
+}
+.text-ring [style*=--index] {
+  /* -webkit-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite; */
+  font-size: calc(var(--font-size, 2) * 1rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:
+    translate(-50%, -50%)
+    rotate(calc(360deg / var(--total) * var(--index)))
+    translateY(calc(var(--radius, 5) * -1ch));
+}
+
+.circular_span {
+  --total: 10;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#resume_btn:hover {
+  color: var(--lightyellow);
+}
+
 h1#contact_social {
+  margin: 40px 0px;
   font-size: 6rem;
 }
 .container {
@@ -24,7 +90,7 @@ h1#contact_social {
   border-top: 2px solid black;
   border-left: 2px solid black;
   width: 850px;
-  height: 500px;
+  height: 550px;
   justify-content: space-around;
   align-items: center;
 }
@@ -58,6 +124,7 @@ input {
   border-bottom: 6px solid #f6c453;
   outline: none;
   letter-spacing: 3px;
+  padding: 5px 0px;
 }
 
 label {
@@ -83,7 +150,7 @@ textarea:active ~ label{
 
 .btn_box {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 #submit_btn {
@@ -93,11 +160,18 @@ textarea:active ~ label{
   margin-top: 20px;
   border-radius: 20px;
   width: 230px;
+  text-align: center;
   transition: all 330ms ease-in-out;
+  border-bottom: none;
+  box-shadow: 1.5px 8px #f6c453;
+}
+
+#submit_btn:active {
+  box-shadow: none;
+  transform: translateY(4px);
 }
 
 #submit_btn:hover {
-  transform: scale(1.1);
   color: var(--yellow);
 }
 
@@ -107,10 +181,15 @@ a {
 }
 
 .contact_message {
-  color: var(--black);
+  color: var(--yellow);
+  display: flex;
+  justify-content: center;
 }
 
 input:-webkit-autofill {
-  /* box-shadow: 0 0 0 30px rgb(244, 232, 187) inset !important; */
-  transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s; /* change input field color */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #d4c393;
 }

@@ -35,29 +35,49 @@
   </header>
 
   <main>
-    <h1 id="contact_social">Social</h1>
-      <div class="container">
-        <div class="icon_box">
-          <a href="https://www.linkedin.com/in/chutima-puthachon-a42012284/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/Giv-08" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://codepen.io/MALICIPE/" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-        </div>
-        <div class="form_box">
-          <form id="contact_form">
-            <!-- <input type="hidden" name="contact_number"> -->
-            <label>Name</label>
-            <input type="text" name="user_name" placeholder="Your Name" required>
-            <label>Email</label>
-            <input type="email" name="user_email" placeholder="Your Email" required>
-            <label>Message</label>
-            <textarea name="user_message" placeholder="Your Message" required></textarea>
-            <div class="btn_box">
-              <input id="submit_btn" type="submit" value="Send">
-            </div>
-            <p class="contact_message" id="contact_message"></p>
-          </form>
-        </div>
+    <div class="top_section">
+      <div class="btn_box">
+        <a href="assets/my_resume.pdf" target="_blank" download>
+          <!-- <span id="resume_btn">RESUME <i class="fa-solid fa-cloud-arrow-down"></i></span> -->
+          <span class="text-ring" style="--total: 15;">
+            <span aria-hidden="true">
+              <span class="circular_span" style="--index: 0">M</span>
+              <span class="circular_span" style="--index: 1">Y</span>
+              <span class="circular_span" style="--index: 3">R</span>
+              <span class="circular_span" style="--index: 4">E</span>
+              <span class="circular_span" style="--index: 5">S</span>
+              <span class="circular_span" style="--index: 6">U</span>
+              <span class="circular_span" style="--index: 7">M</span>
+              <span class="circular_span" style="--index: 8">E</span>
+            </span>
+            <span class="sr-only">RESUME</span>
+          </span>
+        </a>
       </div>
+      <h1 id="contact_social">Social</h1>
+    </div>
+    <div class="container">
+      <div class="icon_box">
+        <a href="https://www.linkedin.com/in/chutima-puthachon-a42012284/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Giv-08" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://codepen.io/MALICIPE/" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+      </div>
+      <div class="form_box">
+        <form id="contact_form">
+          <!-- <input type="hidden" name="contact_number"> -->
+          <label>Name</label>
+          <input type="text" name="user_name" placeholder="Your Name" required>
+          <label>Email</label>
+          <input type="email" name="user_email" placeholder="Your Email" required>
+          <label>Message</label>
+          <textarea name="user_message" placeholder="Your Message" required></textarea>
+          <div class="btn_box">
+            <input id="submit_btn" type="submit" value="SEND">
+          </div>
+          <p class="contact_message" id="contact_message"></p>
+        </form>
+      </div>
+    </div>
   </main>
   <footer></footer>
   <script src="javascript/script.js"></script>

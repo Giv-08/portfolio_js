@@ -119,7 +119,7 @@ li.nav_menu_item:hover {
   position: fixed;
   color: var(--white);
   text-decoration: none;
-  bottom: 5%;
+  bottom: 10%;
   font-size: 1rem;
   border-radius: 5px;
 }
