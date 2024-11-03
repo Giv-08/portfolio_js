@@ -23,62 +23,54 @@ header {
 
 .top_section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 
-/* #resume_btn {
-  display: block;
-  text-align: center;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
-  background-color: var(--yellow);
-  color: var(--white);
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 20px;
-  width: 230px;
-  height: 25px;
-  transition: all 330ms ease-in-out;
-  border-bottom: none;
-  box-shadow: 1.5px 8px #dc7e19;
-  -webkit-animation: spin 8s linear infinite;
-  animation: spin 8s linear infinite;
-} */
-
-.text-ring {
-  position: relative;
-  margin-left: 5rem;
+#text_ring {
+  height: 200px;
+  width: 200px;
+  top: 10%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
-.text-ring [style*=--index] {
-  /* -webkit-animation: spin 8s linear infinite;
-  animation: spin 8s linear infinite; */
-  font-size: calc(var(--font-size, 2) * 1rem);
+
+#circle_text {
+  position: absolute;
+  animation: effect 15s linear infinite;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+span {
+  position: absolute;
+  left: 50%;
+  font-weight: 500;
+  transform-origin: 0px 100px;
+  z-index: 0;
+}
+
+#download_icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:
-    translate(-50%, -50%)
-    rotate(calc(360deg / var(--total) * var(--index)))
-    translateY(calc(var(--radius, 5) * -1ch));
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  z-index: 1;
+  transition: all 500ms ease-in-out;
 }
 
-.circular_span {
-  --total: 10;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-#resume_btn:hover {
-  color: var(--lightyellow);
+#download_icon:hover {
+  color: var(--yellow);
+  font-size: 3rem;
+  text-shadow: 2px 5px 2px #ffffff84;
 }
 
 h1#contact_social {
@@ -89,7 +81,7 @@ h1#contact_social {
   display: flex;
   border-top: 2px solid black;
   border-left: 2px solid black;
-  width: 850px;
+  width: 950px;
   height: 550px;
   justify-content: space-around;
   align-items: center;
@@ -161,7 +153,7 @@ textarea:active ~ label{
   border-radius: 20px;
   width: 230px;
   text-align: center;
-  transition: all 330ms ease-in-out;
+  transition: all 100ms ease-out;
   border-bottom: none;
   box-shadow: 1.5px 8px #f6c453;
 }
@@ -173,6 +165,7 @@ textarea:active ~ label{
 
 #submit_btn:hover {
   color: var(--yellow);
+  cursor: pointer;
 }
 
 a {
@@ -182,14 +175,13 @@ a {
 
 .contact_message {
   color: var(--yellow);
-  display: flex;
-  justify-content: center;
+  margin-top: 20px;
 }
 
 input:-webkit-autofill {
-  transition: background-color 5000s ease-in-out 0s; /* change input field color */
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #d4c393;
+  color: #dec682;
 }
