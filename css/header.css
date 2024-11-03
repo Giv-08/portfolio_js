@@ -4,7 +4,6 @@
   --black: #2e2e2e;
   --beige: #e8e4d3;
   --green: #325938;
-  /* --lightgreen: #e1eedd; */
   --yellow: #f6c453;
   --lightyellow: #f3e3bf;
   --orange: #dc7e19;
@@ -80,6 +79,11 @@ div.nav_menu {
   top: 25%;
 }
 
+#hamburger {
+  display: none;
+  font-size: 1.8rem;
+}
+
 ul {
   position: fixed;
   margin-top: 0;
@@ -147,11 +151,19 @@ li.nav_menu_item:hover {
   }
 
   .nav_menu_item a {
-    font-size: 2rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #email {
+    font-size: 0.5rem;
   }
 
-  #email {
-    font-size: 0.8rem;
+  .greeting {
+    position: relative;
+    top: 5%;
+    font-size: 5rem;
   }
 }
 
@@ -162,7 +174,7 @@ li.nav_menu_item:hover {
   }
 
   .nav_menu_item a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   div#main {
@@ -176,12 +188,19 @@ li.nav_menu_item:hover {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 650px) {
   #nav_logo {
-    top: 30%;
+    top: 0%;
+    left: 5%;
     width: 80px;
     height: 80px;
   }
+
+  /* .greeting {
+    position: relative;
+    top: 10%;
+    font-size: 5rem;
+  } */
 
   div.nav_menu {
     display: none;
@@ -192,14 +211,47 @@ li.nav_menu_item:hover {
     align-items: center;
   }
 
+  #nav_contact {
+    position: fixed;
+    left: 60%;
+  }
+
   #email {
-    font-size: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .active, .nav_menu_item a {
+    transform: scale(1.2);
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  body {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
+  #nav_contact {
+    position: fixed;
+    left: 50%;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 800px) {
+
+  div#fullname {
+    margin-left: none;
+  }
+
+  #greeting {
+    display: none;
+  }
+
   #email {
-    font-size: 0.2rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -209,7 +261,7 @@ li.nav_menu_item:hover {
     height: 50px;
   }
 
-  #email {
-    font-size: 0.1rem;
+  div#fullname {
+    margin-left: 60px;
   }
 }

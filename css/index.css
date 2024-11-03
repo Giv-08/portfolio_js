@@ -19,13 +19,13 @@ div#main {
   grid-template-columns: 1.1fr 1fr;
 }
 
-#greeting {
+.greeting {
   position: absolute;
   font-size: 10rem;
   letter-spacing: 5px;
 }
 
-#greeting:after {
+.greeting:after {
   animation: abomination1 4s linear infinite;
   animation-fill-mode: forwards;
   position: absolute;
@@ -108,7 +108,7 @@ div#fullname {
     align-items: center;
   }
 
-  #greeting {
+  .greeting {
     position: relative;
     font-size: 7rem;
   }
@@ -129,13 +129,22 @@ div#fullname {
 }
 
 @media (max-width: 560px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  #nav_logo {
+    top: 0;
+    left: 5%;
+  }
+
   div#main {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  #greeting {
+  .greeting {
     top: 10%;
     left: 40%;
     position: absolute;
@@ -153,12 +162,16 @@ div#fullname {
   }
 
   #title {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .greeting {
+    left: 25%;
   }
 }
 
 @media (max-width: 320px) {
-  #greeting {
+  .greeting {
     font-size: 3rem;
   }
 
@@ -167,9 +180,13 @@ div#fullname {
   }
 
   span#surname {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   #title {
-    font-size: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .greeting {
+    top: 20%;
   }
 }
