@@ -185,3 +185,220 @@ input:-webkit-autofill {
 input::placeholder, textarea::placeholder {
   color: #dec682;
 }
+
+/* Media queries for further adjustments on smaller screens */
+@media (max-width: 1366px) {
+  main {
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_menu_item a {
+    font-size: 2rem;
+  }
+
+  h1#contact_social {
+    margin: 20px 0px;
+    font-size: 5rem;
+  }
+
+  .container {
+    width: 650px;
+    height: 350px;
+  }
+
+  label {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+  }
+
+  #contact_form {
+    margin-top: 6rem;
+  }
+
+  #submit_btn {
+    width: 180px;
+  }
+
+  span {
+    transform-origin: 0px 70px;
+  }
+
+  #circle_text {
+    top: 15%;
+  }
+}
+
+@media (max-width: 900px) {
+  h1#contact_social {
+    font-size: 4rem;
+  }
+
+  .nav_menu_item a {
+    font-size: 1.6rem;
+  }
+
+  textarea {
+    width: 350px;
+    border-bottom: 2px solid #f6c453;
+  }
+
+  .form_box {
+    width: 350px;
+  }
+
+  input {
+    font-size: 1rem;
+    border-bottom: 2px solid #f6c453;
+  }
+
+  #submit_btn {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 550px;
+    height: 350px;
+    gap: 4rem;
+  }
+
+  input::placeholder, textarea::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    height: auto;
+  }
+
+  #nav_logo {
+    display: none;
+  }
+
+  #text_ring {
+    top: 15%;
+  }
+
+  div.nav_menu {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+}
+
+@media (max-width: 768px) and (max-height: 600px) {
+  .container {
+    width: 400px;
+    height: 300px;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  i {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  #contact_form, textarea {
+    width: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  span {
+    transform-origin: 0px 60px;
+  }
+
+  #circle_text {
+    top: 25%;
+  }
+
+  .container {
+    width: 480px;
+    height: 350px;
+    gap: 2rem;
+  }
+
+  span {
+    transform-origin: 0px 55px;
+    font-size: 0.8rem;
+  }
+
+  #download_icon {
+    top: 50%;
+    left: 50%;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 350px;
+    height: 280px;
+    gap: 2rem;
+  }
+
+  h1#contact_social {
+    font-size: 2.5rem;
+  }
+
+  .icon_box {
+    font-size: 2rem;
+    gap: 2rem;
+  }
+
+  i {
+    margin-left: 1rem;
+  }
+
+  #contact_form, textarea {
+    width: 250px;
+  }
+
+  #download_icon {
+    left: 42%;
+    font-size: 1.5rem;
+  }
+
+  #submit_btn {
+    width: 150px;
+  }
+
+  #text_ring {
+    top: 13%;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 800px) {
+  .container {
+    width: 300px;
+    height: 280px;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  input::placeholder, textarea::placeholder {
+    font-size: 0.8rem;
+  }
+
+  #contact_form, textarea {
+    width: 220px;
+  }
+
+  #submit_btn {
+    font-size: 0.8rem;
+  }
+}

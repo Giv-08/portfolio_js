@@ -10,6 +10,10 @@
   }
 /*          MAIN PROJECTS        */
 
+header#left {
+    position: relative;
+}
+
 h1 {
   font-size: 5rem;
 }
@@ -91,4 +95,90 @@ span {
   color: var(--black);
   font-size: 25px;
   margin-right: 10px;
+}
+
+/* Media queries for further adjustments on smaller screens */
+@media (max-width: 1366px) {
+  main {
+    padding: 50px;
+  }
+
+  .project_photo {
+    width: 350px;
+  }
+  div.project_box {
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .nav_menu_item a {
+    font-size: 2rem;
+  }
+
+  .nav_menu_item a {
+    transform: scale(1.2);
+  }
+
+  .project_photo {
+    width: 300px;
+    height: auto;
+  }
+
+  #project_gif {
+    width: 300px;
+    height: auto;
+  }
+
+  #email {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 600px) {
+  span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .tools i {
+    font-size: 20px;
+  }
+
+  #email {
+    display: none;
+  }
+
+  #nav_logo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 800px) {
+
+  .project_photo {
+    width: 200px;
+    height: auto;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  #project_gif {
+    width: 200px;
+    height: auto;
+  }
 }
