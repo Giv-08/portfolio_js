@@ -49,3 +49,9 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+function toggleMenu() {
+  const menu = document.querySelector('.nav_menu');
+  menu.classList.toggle('active'); // Add or remove the active class
+}

@@ -65,14 +65,12 @@ span#name {
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 0.5rem;
-  /* font-family: "Bungee Shade", sans-serif; */
   font-family: "Rampart One", sans-serif;
 }
 
 span#surname {
   font-size: 4rem;
   font-weight: 600;
-  /* font-family: "Bungee Shade", sans-serif; */
   font-family: "Rampart One", sans-serif;
 }
 
@@ -97,4 +95,81 @@ div#fullname {
   padding-bottom: 20px;
   flex-direction: column;
   align-items: center;
+}
+
+/* Media queries for further adjustments on smaller screens */
+@media (max-width: 1366px) {
+  main#right {
+    overflow: hidden
+  }
+
+  #line_box {
+    border-left: none;
+    align-items: center;
+  }
+
+  #greeting {
+    position: relative;
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  div#fullname {
+    border-bottom: none;
+  }
+
+  span#name {
+    font-size: 4rem;
+  }
+
+  span#surname {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 560px) {
+  div#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #greeting {
+    top: 10%;
+    left: 40%;
+    position: absolute;
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  span#name {
+    font-size: 3rem;
+  }
+
+  span#surname {
+    font-size: 2rem;
+  }
+
+  #title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #greeting {
+    font-size: 3rem;
+  }
+
+  span#name {
+    font-size: 2rem;
+  }
+
+  span#surname {
+    font-size: 1rem;
+  }
+  #title {
+    font-size: 0.5rem;
+  }
 }
