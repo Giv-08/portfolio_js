@@ -23,6 +23,7 @@ div#main {
   position: absolute;
   font-size: 10rem;
   letter-spacing: 5px;
+  z-index: 0;
 }
 
 .greeting:after {
@@ -110,11 +111,16 @@ div#fullname {
 
   .greeting {
     position: relative;
-    font-size: 7rem;
+    font-size: 5rem;
+  }
+
+  div#main {
+    padding: 50px;
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-height: 560px) {
   div#fullname {
     border-bottom: none;
   }
@@ -148,7 +154,7 @@ div#fullname {
     top: 10%;
     left: 40%;
     position: absolute;
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
@@ -159,6 +165,10 @@ div#fullname {
 
   span#surname {
     font-size: 2rem;
+  }
+  #nav_logo {
+    width: 65px;
+    height: 65px;
   }
 
   #title {
