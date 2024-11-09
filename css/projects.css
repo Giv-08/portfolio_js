@@ -10,10 +10,6 @@
   }
 /*          MAIN PROJECTS        */
 
-header#left {
-    position: relative;
-}
-
 h1 {
   font-size: 5rem;
 }
@@ -30,25 +26,27 @@ div.project_box {
 
 div.project_card {
   opacity: 0.7;
-  transition: opacity 300ms ease, transform 150ms ease-in-out;
+  transition: opacity 100ms ease, transform 100ms ease-in-out;
 }
 
 div.project_card:hover {
   cursor: pointer;
   opacity: 1; /* Fully opaque on hover */
   transition: 500ms ease-in-out all;
-  transform: translateY(-15px);
+  transform: translateY(-20px);
+  padding: 15px;
+  border-radius: 10px;
+  background-color:#d8c48878;
 }
 
 .project_container{
   position: relative;
   text-align: center;
-  color: white;
+  color: var(--white);
 }
 
 .project_photo {
   width: 400px;
-  /* opacity: 0.7; */
 }
 
 #project_gif {

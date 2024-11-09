@@ -45,7 +45,7 @@ body {
 /*          navbar          */
 header {
   position: sticky;
-  background: var(--yellow);
+  background: #f6c553e3;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -54,10 +54,9 @@ header {
 #nav_container {
   display: flex;
   justify-content: center;
-  /*  */
   height: 0;
   overflow: hidden;
-  transition: height 0.3s ease;
+  transition: height 0.2s ease;
 }
 
 #nav_container.active {
@@ -81,6 +80,17 @@ div.nav_menu {
   display: none;
   font-size: 2rem;
   cursor: pointer;
+  margin: 3px;
+  padding: 1px 5px;
+  background-color: #f6f2e18c;
+  border-radius: 4px;
+  height: max-content;
+  color: var(--orange);
+}
+
+i#hamburger.fa-solid.fa-xmark::before {
+  padding: 0px 4px;
+  font-size: 2.3rem;
 }
 
 #nav_logo {
@@ -180,7 +190,7 @@ li.nav_menu_item:hover {
 
   .greeting {
     position: relative;
-    top: 5%;
+    top: 20%;
     font-size: 5rem;
   }
 }

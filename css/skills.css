@@ -43,7 +43,7 @@ span.skill {
 }
 
 .skills_box:hover {
-  animation: change-background 2s ease infinite;
+  animation: change-background 4s ease infinite;
 }
 
 @keyframes change-background {
@@ -51,16 +51,16 @@ span.skill {
     background: #fdc748;
   }
   25% {
-    background: #f7d27c;
+    background: #f6e0ac;
     }
     50% {
-    background: #f6c453;
+    background: #f4b522;
   }
   75% {
-    background: #fce1a3;
+    background: #fbd988;
   }
   100% {
-    background: #f6c453;
+    background: #ffb301;
   }
 }
 

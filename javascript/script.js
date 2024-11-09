@@ -55,18 +55,17 @@ function toggleMenu() {
   const menu = document.querySelector('.nav_menu');
   const menu_container = document.getElementById('nav_container');
   const logo = document.getElementById('nav_logo');
-  // const hamburger = document.getElementById('hamburger');
+  const hamburger = document.getElementById('hamburger');
 
   menu.classList.toggle('active'); // Add or remove the active class
   menu_container.classList.toggle('active');
-  // if (menu_container.style.height == '0px') {
-  //   menu_container.style.height = '100vh';
-  //   menu.style.display = 'block';
-  // } else {
-  //   menu_container.style.height = '0px';
-  //   menu.style.display = 'none';
-  // }
-  if (menu_container.classList == 'active') {
+
+  if (menu_container.classList.contains('active')) {
     logo.style.display = 'none';
+    hamburger.classList.remove('fa-bars');
+    hamburger.classList.add('fa-xmark');
+  } else {
+    hamburger.classList.remove('fa-xmark');
+    hamburger.classList.add('fa-bars');
   }
 }
