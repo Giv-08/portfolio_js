@@ -54,6 +54,8 @@ for (var i = 0; i < btns.length; i++) {
 function toggleMenu() {
   const menu = document.querySelector('.nav_menu');
   const menu_container = document.getElementById('nav_container');
+  const logo = document.getElementById('nav_logo');
+  // const hamburger = document.getElementById('hamburger');
 
   menu.classList.toggle('active'); // Add or remove the active class
   menu_container.classList.toggle('active');
@@ -64,4 +66,7 @@ function toggleMenu() {
   //   menu_container.style.height = '0px';
   //   menu.style.display = 'none';
   // }
+  if (menu_container.classList == 'active') {
+    logo.style.display = 'none';
+  }
 }

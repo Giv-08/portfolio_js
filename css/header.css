@@ -79,7 +79,7 @@ div.nav_menu {
 
 #hamburger {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -97,7 +97,6 @@ div.nav_menu {
   transform: rotate(360deg);
   transition: all 800ms ease-in-out;
 }
-
 
 ul {
   position: fixed;
@@ -167,6 +166,10 @@ li.nav_menu_item:hover {
 
   .nav_menu_item a {
     font-size: 2.3rem;
+  }
+
+  #line_box {
+    margin-top: 8rem;
   }
 }
 
@@ -240,11 +243,16 @@ li.nav_menu_item:hover {
   }
 
   #email {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
+    display: none;
   }
 
   .active, .nav_menu_item a {
     transform: scale(1.2);
+  }
+
+  .nav_menu.active {
+    display: flex;
   }
 
   #hamburger {
