@@ -107,6 +107,10 @@ span.skill {
   #nav_contact {
     left: 50%;
   }
+
+  #nav_logo {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) and (max-height: 800px) {

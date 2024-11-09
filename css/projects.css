@@ -160,9 +160,10 @@ span {
   }
 
   #nav_logo {
-    width: 60px;
+    /* width: 60px;
     height: 60px;
-    position: absolute;
+    position: absolute; */
+    display: none;
   }
 }
 

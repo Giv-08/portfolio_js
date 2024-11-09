@@ -13,11 +13,11 @@
 /*            ABOUT MAIN          */
 main {
   margin: 50px 150px;
-}
+} */
 
-header {
+/* header {
   min-height: 100vh;
-}
+} */
 
 h1#about {
   font-size: 5rem;
@@ -100,26 +100,22 @@ strong.bold {
   }
 }
 
-@media (max-width: 768px) and (max-height: 600px) {
+/* @media (max-width: 768px) and (max-height: 600px) {
 
-}
+} */
 
 @media (max-width: 650px) {
   body {
     grid-template-columns: 1fr;
   }
 
-  header {
+  /* header {
     min-height: 0;
-  }
-
-  #nav_logo {
-    position: absolute;
   }
 
   #hamburger {
     display: block;
-  }
+  } */
 
   #intro p {
     font-size: 1rem;
@@ -140,5 +136,5 @@ strong.bold {
   }
 }
 
-@media (max-width: 320px) {
-}
+/* @media (max-width: 320px) {
+} */

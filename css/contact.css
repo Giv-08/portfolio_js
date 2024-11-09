@@ -17,9 +17,9 @@ main {
   align-items: flex-end;
 }
 
-header {
+/* header {
   height: 100vh;
-}
+} */
 
 .top_section {
   display: flex;
@@ -33,6 +33,7 @@ header {
   top: 10%;
   position: absolute;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 #circle_text {
@@ -273,12 +274,12 @@ input::placeholder, textarea::placeholder {
     grid-template-columns: 1fr;
   }
 
-  header {
-    height: auto;
-  }
-
   #nav_logo {
     display: none;
+  }
+
+  #nav_container {
+    overflow: unset;
   }
 
   #text_ring {
@@ -313,6 +314,10 @@ input::placeholder, textarea::placeholder {
   #contact_form, textarea {
     width: 300px;
   }
+
+  #download_icon {
+    left: 40%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -320,8 +325,12 @@ input::placeholder, textarea::placeholder {
     transform-origin: 0px 60px;
   }
 
+  header {
+    z-index: 2;
+  }
+
   #circle_text {
-    top: 25%;
+    top: 27%;
   }
 
   .container {
@@ -331,13 +340,13 @@ input::placeholder, textarea::placeholder {
   }
 
   span {
-    transform-origin: 0px 55px;
+    transform-origin: 0px 45px;
     font-size: 0.8rem;
   }
 
   #download_icon {
     top: 50%;
-    left: 50%;
+    left: 42%;
     font-size: 1.7rem;
   }
 }
@@ -400,5 +409,9 @@ input::placeholder, textarea::placeholder {
 
   #submit_btn {
     font-size: 0.8rem;
+  }
+
+  .nav_menu_item a {
+    font-size: 1rem;
   }
 }
