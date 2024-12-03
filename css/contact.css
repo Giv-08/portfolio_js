@@ -334,7 +334,7 @@ input::placeholder, textarea::placeholder {
   }
 
   #circle_text {
-    top: 27%;
+    display: none;
   }
 
   .container {
