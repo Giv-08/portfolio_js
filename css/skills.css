@@ -33,10 +33,6 @@ h1#skills {
   transition: all 600ms ease-in-out;
 }
 
-.skills_box:hover {
-  transform: scale(1.1);
-}
-
 span.skill {
   line-height: 40px;
   font-size: 1.2rem;
@@ -44,6 +40,7 @@ span.skill {
 
 .skills_box:hover {
   animation: change-background 4s ease infinite;
+  transform: scale(1.1);
 }
 
 @keyframes change-background {

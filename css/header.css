@@ -45,7 +45,7 @@ body {
 /*          navbar          */
 header {
   position: sticky;
-  background: #f6c553e3;
+  background: var(--yellow);
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -296,7 +296,7 @@ li.nav_menu_item:hover {
   }
 
   .nav_menu_item a {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 

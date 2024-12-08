@@ -356,7 +356,13 @@ input::placeholder, textarea::placeholder {
   #download_icon {
     top: 50%;
     left: 40%;
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
+    letter-spacing: 5px;
+    font-size: 1.4rem;
+  }
+
+  #download_icon::after {
+    content: 'MY RESUME';
   }
 }
 
@@ -422,5 +428,9 @@ input::placeholder, textarea::placeholder {
 
   .nav_menu_item a {
     font-size: 1rem;
+  }
+
+  #download_icon {
+    font-size: 1.1rem;
   }
 }
